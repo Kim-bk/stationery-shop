@@ -1,0 +1,191 @@
+@import url(../css/bootstrap-select.min.css);
+@import url(../css/animate.min.css);
+@import url(../fancybox/jquery.fancybox.css);
+@import url(../fancybox/style.fancybox.css);
+@import url(../slick/slick.css);
+@import url(../slick/slick-theme.css);
+@import url(../mCustomScrollbar/jquery.mCustomScrollbar.min.css);
+/*@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);*/
+@import url(../fonts/fontawesome/css/all.css);
+@import url(../fonts/National2/stylesheet.css);
+@import url(../fonts/National2Condensed/stylesheet.css);
+@import url(../fonts/Asap/stylesheet.css);
+@import url(../fonts/AsapCondensed/stylesheet.css);
+@import url(../css/hamburgers.min.css);
+@import url(../css/floating-labels.css);
+html, body {
+    width: 100vw;
+}
+
+body {
+    overflow-x: hidden;
+}
+html[lang="en"] body{
+    font-family: "National2";
+}
+html[lang="vi"] body{
+    font-family: "Asap";
+}
+#page{
+    width: 100vw;
+}
+
+img {
+    user-select: none;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+a,
+a:active,
+a:hover,
+a:focus,
+a:visited,
+[onclick],
+.btn,
+.btn:active,
+.btn:hover,
+.btn:focus,
+.btn:visited,
+button,
+button:active,
+button:hover,
+button:focus,
+button:visited {
+    color:inherit;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none !important;
+    transition: all 0.2s;
+}
+input {
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+span[style] {
+    font-family: inherit !important;
+    font-size: inherit !important;
+}
+
+.custom-control-style .custom-control{
+    min-height: 1.5em;
+    padding-left: 1.5em;
+    padding-left:0;
+}
+.custom-control-style .custom-control-label{
+    cursor:pointer;
+    padding-left:1.875em;
+    font-size:1em;
+    user-select:none;
+    /*line-height:1.4;*/
+}
+.custom-control-style .custom-control-input:disabled~.custom-control-label::after{
+    background-color: #f5f5f5!important;
+}
+.custom-control-style .custom-control-label::before,.custom-control-style .custom-control-label::after{
+    font-size:1.375em;/*22px*/
+    top: .25em;
+    top:0.1em;
+    top:0;
+    left:0em;
+    width: 1em;
+    height: 1em;
+    border: #707070 solid 1px;
+    background-color:#fff!important;
+    outline:none!important;
+    box-shadow:none!important;
+}
+.custom-control-style .custom-radio .custom-control-label::before,.custom-control-style .custom-radio .custom-control-label::after{
+    border-radius:100%!important;
+}
+.custom-control-style .custom-checkbox .custom-control-label::before,.custom-control-style .custom-checkbox .custom-control-label::after{
+    border-radius:3px!important;
+}
+.custom-control-style .custom-control .custom-control-input:checked~.custom-control-label::after{
+    background-image:url("../images/radio_check.png")!important;
+    background-size:60%;
+    background-position:center;
+}
+.form_book_item .custom-control-style .custom-control-label::before,.form_book_item .custom-control-style .custom-control-label::after{
+    border: 1px solid #e2e2e2;
+    border-radius: 100% !important;
+    border-color: #e2e2e2!important;
+    background-color: transparent;
+}
+.form_book_item .custom-control-style .custom-control .custom-control-input:checked~.custom-control-label::after{
+    border: 1px solid #000;
+    border-color: #000!important;
+}
+.form_book_item .custom-control-style .custom-control .custom-control-input:checked~.custom-control-label{
+    font-weight: bold;
+    color: #000;
+}
+@media (min-width: 992px) {
+    /*width:1920px = font-sixe:18px*/
+    html, body {
+        /*font-size: 0.9375vw;*/
+        font-size:18px;
+    }
+   
+    .pc{
+        display: block;
+    }
+    .mb{
+        display: none;
+    }
+    .container{
+        width:1024px;
+        max-width:1024px;
+        padding-left:0;
+        padding-right:0;
+    }
+}
+
+@media (max-width: 991px) {
+    /*width:750px = font-sixe:18px*/
+    html,
+    body {
+        font-size: 2.4vw;
+    }
+    .kesoc{
+        display: none;
+    }
+    
+    h4{display: none}
+    .logo
+    {display: none}
+    .mb{
+        display: block;
+    }
+    .container{
+        padding-left:0;
+        padding-right:0;
+    }
+}
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
